@@ -1,0 +1,19 @@
+POST http://localhost:3000/api/preferences
+Content-Type: application/json
+
+{
+  "userId": "user123",
+  "email": "user@example.com",
+  "preferences": {
+    "marketing": true,
+    "newsletter": false,
+    "updates": true,
+    "frequency": "weekly",
+    "channels": {
+      "email": true,
+      "sms": false,
+      "push": true
+    }
+  },
+  "timezone": "America/New_York"
+}
